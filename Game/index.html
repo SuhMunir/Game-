@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catch the Dot Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #f7f7f7; }
+        #gameArea { width: 400px; height: 400px; margin: 20px auto; background: #eee; position: relative; border: 2px solid #888; }
+        #dot {
+            width: 40px; height: 40px; border-radius: 50%; background: #ff5722;
+            position: absolute; cursor: pointer; display: none;
+            box-shadow: 0 2px 8px #999;
+        }
+        #score, #timer { font-size: 18px; margin: 10px; }
+        #startBtn { padding: 10px 30px; font-size: 18px; cursor: pointer; margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <h1>Catch the Dot!</h1>
+    <div id="score">Score: 0</div>
+    <div id="timer">Time: 30</div>
+    <div id="gameArea">
+        <div id="dot"></div>
+    </div>
+    <button id="startBtn">Start Game</button>
+    <script src="game.js"></script>
+</body>
+</html>
